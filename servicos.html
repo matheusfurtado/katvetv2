@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Serviços - Katchiry Bortolini</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        /* Banner com logo sobreposta */
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background: url("images/banner.png") center/cover no-repeat;
+        }
+
+        .banner img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-height: 220px; /* AUMENTADO */
+            max-width: 70%;
+            height: auto;
+            width: auto;
+        }
+
+        /* Sub banner amarelo */
+        .sub-banner {
+            background-color: #e6c991;
+            padding: 20px;
+            text-align: center;
+            color: #3b3b3b;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            font-weight: bold;
+        }
+
+        /* Serviços - ícones */
+        .services {
+            background-color: #ffffff;
+            padding: 30px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service-item {
+            flex: 0 0 100px;
+            max-width: 100px;
+        }
+
+        .service-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Seção Cães e Gatos - lado a lado */
+        .pets-section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            color: #333;
+        }
+
+        .pets-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #3b3b3b;
+        }
+
+        .pets-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .pet-item {
+            flex: 1 1 400px;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .pet-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .pet-item p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Rodapé amarelo */
+        footer {
+            background-color: #e6c991;
+            padding: 20px;
+            text-align: center;
+            color: #3b3b3b;
+            font-weight: bold;
+        }
+
+        /* Responsivo */
+        @media (min-width: 768px) {
+            .service-item {
+                flex: 0 0 120px;
+                max-width: 120px;
+            }
+
+            .pet-item img {
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Banner com logo sobreposta -->
+    <div class="banner">
+        <img src="images/logo.png" alt="Logo Katchiry Bortolini" />
+    </div>
+
+    <!-- Sub-banner amarelo com texto -->
+    <div class="sub-banner">
+        🧡 Atendimento humanizado e individualizado, focado na diminuição do estresse e ansiedade.<br>
+        📍 Grande Florianópolis<br>
+        📞 Agende sua consulta pelo WhatsApp
+    </div>
+
+    <!-- Serviços -->
+    <div class="services">
+        <div class="service-item">
+            <img src="images/consulta.png" alt="Consulta" />
+        </div>
+        <div class="service-item">
+            <img src="images/vacinas.png" alt="Vacinas" />
+        </div>
+        <div class="service-item">
+            <img src="images/curativos.png" alt="Curativos" />
+        </div>
+        <div class="service-item">
+            <img src="images/exames.png" alt="Exames" />
+        </div>
+        <div class="service-item">
+            <img src="images/medicamentos.png" alt="Medicamentos" />
+        </div>
+        <div class="service-item">
+            <img src="images/atestado.png" alt="Atestado" />
+        </div>
+    </div>
+
+    <!-- Cães e Gatos lado a lado -->
+    <div class="pets-section">
+        <h2>Atendimento para Cães e Gatos</h2>
+        <div class="pets-grid">
+            <div class="pet-item">
+                <img src="images/caes.png" alt="Cães" />
+                <p>
+                    Oferecemos atendimento domiciliar completo para cães, com foco em prevenção, diagnóstico e tratamento. Consultas personalizadas, aplicação de vacinas, coleta de exames e muito mais no conforto do seu lar.
+                </p>
+            </div>
+            <div class="pet-item">
+                <img src="images/gatos.png" alt="Gatos" />
+                <p>
+                    Sabemos que os gatos são sensíveis a mudanças de ambiente. Nosso atendimento domiciliar garante um cuidado seguro e tranquilo, com todo o respeito às particularidades felinas. Consultas, vacinas, exames e orientações no conforto da sua casa.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        © 2025 Katchiry Bortolini - Médica Veterinária | CRMV-SC 11836
+    </footer>
+
+</body>
+</html>
