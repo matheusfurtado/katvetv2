@@ -86,13 +86,30 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      gap: 40px;
     }
 
-    .caes-gatos-content img {
-      width: 300px;
+    .caes-gatos-item {
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .caes-gatos-item img {
+      width: 100%;
       height: auto;
       border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .caes-gatos-item h3 {
+      margin: 10px 0 5px 0;
+      color: #3b3f2b;
+      font-size: 1.2rem;
+    }
+
+    .caes-gatos-item p {
+      font-size: 0.95rem;
+      color: #555555;
     }
 
     @media (max-width: 768px) {
@@ -109,8 +126,9 @@
         width: 100px;
       }
 
-      .caes-gatos-content img {
-        width: 90%;
+      .caes-gatos-content {
+        flex-direction: column;
+        align-items: center;
       }
     }
   </style>
@@ -126,7 +144,7 @@
   <div class="sub-banner">
     🧡 Atendimento humanizado e individualizado, focado na diminuição do estresse e ansiedade.<br>
     📍 Grande Florianópolis<br>
-    📞 Agende sua consulta pelo WhatsApp:
+    📞 Agende sua consulta pelo WhatsApp
 
     <div class="buttons">
       <a href="https://wa.me/5546999169092?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento%20veterinário." target="_blank">💬 WhatsApp</a>
@@ -148,8 +166,16 @@
   <div class="caes-gatos">
     <h2>Atendimento para Cães e Gatos</h2>
     <div class="caes-gatos-content">
-      <img src="images/caes.png" alt="Cães" />
-      <img src="images/gatos.png" alt="Gatos" />
+      <div class="caes-gatos-item">
+        <img src="images/caes.png" alt="Cães" />
+        <h3>Cães</h3>
+        <p>Consultas domiciliares para seu cão com todo o cuidado e carinho que ele merece, no conforto do seu lar.</p>
+      </div>
+      <div class="caes-gatos-item">
+        <img src="images/gatos.png" alt="Gatos" />
+        <h3>Gatos</h3>
+        <p>Atendimento especializado para gatos, reduzindo estresse e promovendo bem-estar durante o cuidado veterinário.</p>
+      </div>
     </div>
   </div>
 
